@@ -42,7 +42,9 @@ var button = document.querySelector(".button")
     let text = $(this).siblings(`textarea`).val();
     localStorage.setItem(time, text);
     $(this).css('color','red')
-    $(this).siblings(1).css(`blue`)
-    $(this).siblings(0).css(`purple`)
     
 });
+
+$getItem(time);
+$getItem(text);
+
